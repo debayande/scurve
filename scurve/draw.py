@@ -1,5 +1,5 @@
 import math
-import cairo
+import cairocffi as cairo
 
 class Canvas:
     def __init__(self, width, height):
@@ -159,4 +159,3 @@ class Swatch:
             self.ctx.fill()
             offset += self.colorwidth
         self.c.save(fname)
-
